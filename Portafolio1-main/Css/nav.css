@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__list__item {
+  padding: 0.5rem 1rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+  transition: transform 0.3s ease;
+  border-radius:10px ;
+}
+
+.menu__list__item:hover {
+color: var(--col-de-fondo);
+background-color: rgba(24, 66, 121, 0.2);
+transform: translateY(-5px);
+}
+
+.menu__list__item__contato {
+  display: none;
+}

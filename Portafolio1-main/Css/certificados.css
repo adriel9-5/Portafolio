@@ -1,0 +1,156 @@
+
+/* Experiencia Académica*/
+
+.academic {
+  margin-top: 40px;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.academic__title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.academic__courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.academic__courses__box {
+  border-radius: 12px;
+  display: inline-flex;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
+  overflow: hidden;
+  align-content: space-between;
+}
+
+.academic__courses__box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.academic__courses__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.academic__courses__item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.academic__courses__item__img img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+.academic__courses__item__title {
+  padding: 1.5rem 1.5rem 0;
+  text-align: center;
+}
+
+.academic__courses__item__title h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.academic__courses__item__subtitle {
+  padding: 0.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.academic__courses__item__subtitle p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Estilos del Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  animation: fadeIn 0.3s;
+}
+
+.modal__content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: #3498db;
+}
+
+.modal__caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(3, 0, 0);
+  padding: 10px;
+  background: linear-gradient(to left, #5a5bf3 0%, #91e7d9 120%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.academic__courses__item__img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.academic__courses__item__img:hover {
+  transform: scale(1.06);
+}
